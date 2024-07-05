@@ -1,0 +1,114 @@
+body {
+  font-size: large;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-nav {
+  background-color: #f7f5f2;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 50px;
+}
+
+.top-nav .left-links,
+.top-nav .right-links {
+  display: flex;
+  align-items: center;
+}
+
+.top-nav .left-links a,
+.top-nav .right-links a {
+  color: black;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.top-nav .left-links a:hover,
+.top-nav .right-links a:hover {
+  color: #666;
+}
+
+.top-nav .center-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.top-nav .center-logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  background-color: #fff;
+}
+
+.bottom-nav a {
+  color: black;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+bottom-nav a:hover {
+  color: #666;
+}
+
+.icon {
+  height: 20px;
+  width: 30px;
+  margin-right: 5px;
+}
+
+.webmail {
+  background-color: #ee4a62;
+  color: white;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+}
+
+.webmail:hover {
+  background-color: #ee4a62;
+}
+
+#webmail {
+  margin-right: 100px;
+}
+
+.sgrc {
+  display: flex;
+  align-items: center;
+}
+
+.text-background {
+  font-weight: bolder;
+  background-image: url("rainbow.gif");
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
+  margin-left: 5px;
+}
+
+#bottom-links {
+  margin-top: 20px;
+}
+
+#bottom-links a {
+  font-weight: bold;
+}
+.webmail {
+  color: white;
+}
