@@ -175,3 +175,11 @@ nav {
 .dropdown-sub:hover .dropdown-sub-content {
   display: block;
 }
+
+.image-slider {
+  margin-top: 50px;
+  width: 100%;
+  height: 350px;
+  background-image: url("Assets/Slider-0.jpg");
+  background-size: cover;
+}
