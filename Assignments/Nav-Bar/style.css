@@ -31,10 +31,7 @@ nav {
   margin: 0 5px;
 }
 
-.top-nav .left-links a:hover,
-.top-nav .right-links a:hover {
-  color: #666;
-}
+
 
 .top-nav .center-logo {
   display: flex;
@@ -62,9 +59,7 @@ nav {
   margin: 0 15px;
 }
 
-bottom-nav a:hover {
-  color: #666;
-}
+
 
 .icon {
   height: 20px;
