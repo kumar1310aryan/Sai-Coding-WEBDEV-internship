@@ -311,7 +311,7 @@ nav {
   align-items: center;
 }
 
-.profile h3{
+.profile h3 {
   font-size: 17px;
   text-align: left;
   position: relative;
@@ -319,30 +319,51 @@ nav {
   top: -15px;
 }
 
-.shadow{
+.shadow {
   position: relative;
   top: 10px;
   left: -125px;
 }
 
-.shadow2{
+.shadow2 {
   position: relative;
   top: 18px;
   left: -85px;
 }
 
-.shadow3{
+.shadow3 {
   position: relative;
   top: -2px;
   left: -105px;
 }
 
-.shadow4{
+.shadow4 {
   position: relative;
-  left:-118px;
+  left: -118px;
   top: 5px;
 }
 
-.read-more:hover{
+.read-more:hover {
   color: #1ab69d;
+}
+
+.arrow-left {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  top: 150px;
+  left: 1400px;
+}
+.arrow-right {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  left: 1400px;
+  top: 30px;
+  z-index: 1;
+  transition: none;
 }
