@@ -323,6 +323,26 @@ nav {
   position: relative;
   top: 10px;
   left: -125px;
-  color: gray;
 }
 
+.shadow2{
+  position: relative;
+  top: 18px;
+  left: -85px;
+}
+
+.shadow3{
+  position: relative;
+  top: -2px;
+  left: -105px;
+}
+
+.shadow4{
+  position: relative;
+  left:-118px;
+  top: 5px;
+}
+
+.read-more:hover{
+  color: #1ab69d;
+}
