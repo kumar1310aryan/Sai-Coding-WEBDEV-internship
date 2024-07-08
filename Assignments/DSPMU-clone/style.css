@@ -367,3 +367,17 @@ nav {
   z-index: 1;
   transition: none;
 }
+
+.arrow-left img {
+  position: relative;
+  left: 5px;
+  top: 5px;
+}
+
+.arrow-right img {
+  position: relative;
+  left: 5px;
+  top: 5px;
+}
+
+
