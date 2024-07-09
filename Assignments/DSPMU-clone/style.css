@@ -383,3 +383,29 @@ nav {
 .right-links a:hover {
   color: #ee4a62;
 }
+
+.news-and-updates {
+  display: flex;
+}
+
+.latest-updates {
+  height: 400px;
+  width: 550px;
+  position: relative;
+  left: 165px;
+  top: -170px;
+}
+
+.about-us {
+  height: 400px;
+  width: 550px;
+  position: relative;
+  left: 200px;
+  top: -170px;
+}
+.headings b:hover {
+  text-decoration: underline;
+}
+
+news-updates-content marquee {
+}
