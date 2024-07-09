@@ -380,4 +380,6 @@ nav {
   top: 5px;
 }
 
-
+.right-links a:hover {
+  color: #ee4a62;
+}
