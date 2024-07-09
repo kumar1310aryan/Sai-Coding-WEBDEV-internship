@@ -403,9 +403,62 @@ nav {
   left: 200px;
   top: -170px;
 }
-.headings b:hover {
-  text-decoration: underline;
+
+.updates {
+  list-style: none;
 }
 
-news-updates-content marquee {
+.tab-menu {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  border-bottom: 2px solid #ddd;
+}
+.tab-menu li {
+  margin-right: 20px;
+  padding-bottom: 10px;
+}
+.tab-menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.tab-menu li a.active {
+  color: red;
+  border-bottom: 2px solid red;
+}
+.updates {
+  list-style-type: none;
+  padding: 0;
+}
+.updates li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.date {
+  background-color: #00a79d;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 16px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.update-content {
+  color: red;
+}
+.view-all {
+  text-align: right;
+  margin-top: 20px;
+}
+.view-all a {
+  text-decoration: none;
+  color: #00a79d;
+  font-weight: bold;
 }
