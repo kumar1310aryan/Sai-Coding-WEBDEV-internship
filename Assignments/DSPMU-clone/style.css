@@ -468,3 +468,37 @@ nav {
   color: #00a79d;
   font-weight: bold;
 }
+
+.about-content p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.about-content li {
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.aboutreadmore a{
+  text-decoration: none;
+  color: #333;
+}
+
+.aboutreadmore a:hover{
+
+  color: #00a79d;
+}
+
+.ticked {
+  position: relative;
+  list-style: none;
+}
+
+.ticked::before {
+  content: "✔";
+  font-weight: bolder;
+  position: absolute;
+  left: -35px;
+  color: red;
+  font-size: 28px;
+}
