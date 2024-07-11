@@ -73,7 +73,7 @@ nav {
 }
 
 .webmail:hover {
-  background-color: #ee4a62;
+  background-color: #1ab69d;
 }
 
 #webmail {
@@ -557,4 +557,21 @@ nav {
 
 .card:nth-child(4) .number {
   color: #ffae00; 
+}
+
+.rotating-image {
+  width: 200px;
+  height: 200px;
+  animation: rotate 10s linear infinite;
+  position: relative;
+  top: -200px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
