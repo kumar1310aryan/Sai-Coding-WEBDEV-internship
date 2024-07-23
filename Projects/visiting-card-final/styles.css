@@ -1,0 +1,90 @@
+/* body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.form-container,
+.card-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.form-container {
+  background-color: #f7f7f7;
+  max-width: 350px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.card {
+  width: 350px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card-icons img {
+  width: 30px;
+  margin: 5px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="file"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="file"] {
+  padding: 0;
+}
+
+.card-heading {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card-name,
+.card-address,
+.card-email,
+.card-phone1,
+.card-phone2 {
+  margin: 5px 0;
+} */
