@@ -9,22 +9,13 @@ body {
   align-items: center;
   font-family: cursive;
 }
-/* .card {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  max-width: 700px;
-  margin: auto;
-  text-align: left;
-} */
 
 .card {
-  background-color: #fff; /* Fallback color */
-  background-image: url("/Sai-Coding-WEBDEV-internship/Projects/visiting-card-final/images/vintage-retro-vibe-paper-texture-with-watercolor-flowers_948544-3174.avif"); /* Add your image path here */
-  background-size: cover; /* Cover the entire card */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-color: #fff;
+  background-image: url("images/vintage-retro-vibe-paper-texture-with-watercolor-flowers_948544-3174.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -54,8 +45,8 @@ body {
 }
 
 .contact img {
-  height: 300px;
-  width: 300px;
+  max-height: 200px;
+  max-width: 300px;
 }
 
 .social-icons {
@@ -71,9 +62,9 @@ body {
 }
 
 .contact img {
-  width: 100%; /* Make the image responsive */
-  height: auto; /* Maintain aspect ratio */
-  max-width: 300px; /* Limit the maximum width */
+  width: 100%;
+  height: auto;
+  max-width: 300px;
 }
 
 .main {

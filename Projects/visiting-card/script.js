@@ -72,7 +72,7 @@
     inputs.forEach(id => {
       document.getElementById(id).addEventListener("input", function() {
         saveData();
-        // Update the card in real-time
+        
         if (id === "heading") {
           document.querySelector(".heading h1").textContent = this.value;
         } else if (id === "mobile") {
