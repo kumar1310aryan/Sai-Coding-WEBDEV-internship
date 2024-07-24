@@ -11,126 +11,137 @@
       referrerpolicy="no-referrer"
     />
     <title>Visiting Card</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 20px;
-        background-color: #f4f4f4;
-      }
-      .heading {
-        text-align: center;
-        align-items: center;
-        font-family: cursive;
-      }
-      /* .card {
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        max-width: 700px;
-        margin: auto;
-        text-align: left;
-      } */
-
-      .card {
-        background-color: #fff; /* Fallback color */
-        background-image: url("/Sai-Coding-WEBDEV-internship/Projects/visiting-card-final/images/vintage-retro-vibe-paper-texture-with-watercolor-flowers_948544-3174.avif"); /* Add your image path here */
-        background-size: cover; /* Cover the entire card */
-        background-position: center; /* Center the image */
-        background-repeat: no-repeat; /* Prevent the image from repeating */
-        border-radius: 10px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        max-width: 700px;
-        margin: auto;
-        text-align: left;
-      }
-
-      .info {
-        /* margin: 10px 0; */
-        margin-top: 50px;
-        height: 100px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-      }
-
-      .info-img {
-        display: flex;
-      }
-      .contact {
-        margin-left: 100px;
-        font-size: 14px;
-        color: #555;
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-      }
-
-      .contact img {
-        height: 300px;
-        width: 300px;
-      }
-
-      .social-icons {
-        padding: 50px;
-        text-align: center;
-        margin-top: 20px;
-        display: flex;
-        justify-content: space-around;
-      }
-      .social-icons img {
-        width: 40px;
-        margin: 0 5px;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="form.css" />
   </head>
   <body>
-    <div class="card">
-      <div class="heading"><h1>This is the Heading</h1></div>
-      <br />
-      <div class="info-img">
-        <div class="info">
-          <div><b>Name:</b> <span class="name">Aryan Kumar</span></div>
-          <div><b>Address:</b> <span class="add">Ranchi, Jharkhand</span></div>
-          <div>
-            <b>Email:</b> <span class="email">kumar1310aryan@gmail.com</span>
+    <div class="main">
+      <div class="form-container">
+        <form>
+          <div class="form-group">
+            <label for="heading">Heading</label>
+            <input type="text" id="heading" name="heading" required />
           </div>
-        </div>
-        <div class="contact">
-          <div><i class="fa-solid fa-phone-volume"></i> +91 7667875287</div>
-          <div><i class="fa-brands fa-whatsapp fa-lg"></i> +91 8987851950</div>
-          <br />
-          <img
-            src="/Sai-Coding-WEBDEV-internship/Projects/visiting-card-final/images/vintage-retro-vibe-paper-texture-with-watercolor-flowers_948544-3174.avif"
-            alt=""
-          />
-        </div>
+          <div class="form-group">
+            <label for="mobile">Mobile Number</label>
+            <input type="text" id="mobile" name="mobile" required />
+          </div>
+          <div class="form-group">
+            <label for="whatsapp">WhatsApp Number</label>
+            <input type="text" id="whatsapp" name="whatsapp" required />
+          </div>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="image">Upload Image</label>
+            <input
+              type="file"
+              id="image"
+              name="image"
+              accept="image/*"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="background">Upload Background Image</label>
+            <input
+              type="file"
+              id="background"
+              name="background"
+              accept="image/*"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="facebook">Facebook Link</label>
+            <input type="url" id="facebook" name="facebook" />
+          </div>
+          <div class="form-group">
+            <label for="instagram">Instagram Link</label>
+            <input type="url" id="instagram" name="instagram" />
+          </div>
+          <div class="form-group">
+            <label for="youtube">YouTube Link</label>
+            <input type="url" id="youtube" name="youtube" />
+          </div>
+          <div class="form-group">
+            <label for="linkedin">LinkedIn Link</label>
+            <input type="url" id="linkedin" name="linkedin" />
+          </div>
+          <div class="form-group">
+            <label for="twitter">Twitter (X) Link</label>
+            <input type="url" id="twitter" name="twitter" />
+          </div>
+          <!-- <button type="submit">Submit</button> -->
+        </form>
       </div>
 
-      <div class="social-icons">
-        <img
-          src="/Sai-Coding-WEBDEV-internship/Projects/visiting-card-final/images/facebook-logo-3.png"
-          alt="Facebook"
-        />
-        <img
-          src="/Sai-Coding-WEBDEV-internship/Projects/visiting-card-final/images/OIP.jpg"
-          alt="Instagram"
-        />
-        <img
-          src="/Sai-Coding-WEBDEV-internship/Projects/visiting-card-final/images/official-youtube-logo-png-18.png"
-          alt="LinkedIn"
-        />
-        <img
-          src="/Sai-Coding-WEBDEV-internship/Projects/visiting-card-final/images/OIP (1).jpg"
-          alt="telegram"
-        />
-        <img
-          src="/Sai-Coding-WEBDEV-internship/Projects/visiting-card-final/images/OIP (2).jpg"
-          alt="X"
-        />
+      <div class="card">
+        <div class="heading"><h1>This is the Heading</h1></div>
+        <br />
+        <div class="info-img">
+          <div class="info">
+            <div><b>Name:</b> <span class="name">Aryan Kumar</span></div>
+            <div>
+              <b>Address:</b> <span class="add">Ranchi, Jharkhand</span>
+            </div>
+            <div>
+              <b>Email:</b> <span class="email">kumar1310aryan@gmail.com</span>
+            </div>
+          </div>
+          <div class="contact">
+            <div><i class="fa-solid fa-phone-volume"></i> +91 7667875287</div>
+            <div>
+              <i class="fa-brands fa-whatsapp fa-lg"></i> +91 8987851950
+            </div>
+            <br />
+            <img
+              src="/Sai-Coding-WEBDEV-internship/Projects/visiting-card-final/images/vintage-retro-vibe-paper-texture-with-watercolor-flowers_948544-3174.avif"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="social-icons">
+          <a href=""
+            ><img
+              src="/Sai-Coding-WEBDEV-internship/Projects/visiting-card-final/images/facebook-logo-3.png"
+              alt="Facebook"
+          /></a>
+          <a href=""
+            ><img
+              src="/Sai-Coding-WEBDEV-internship/Projects/visiting-card-final/images/OIP.jpg"
+              alt="Instagram"
+          /></a>
+          <a href=""
+            ><img
+              src="/Sai-Coding-WEBDEV-internship/Projects/visiting-card-final/images/official-youtube-logo-png-18.png"
+              alt="LinkedIn"
+          /></a>
+          <a href=""
+            ><img
+              src="/Sai-Coding-WEBDEV-internship/Projects/visiting-card-final/images/OIP (1).jpg"
+              alt="telegram"
+          /></a>
+          <a href=""
+            ><img
+              src="/Sai-Coding-WEBDEV-internship/Projects/visiting-card-final/images/OIP (2).jpg"
+              alt="X"
+          /></a>
+        </div>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
