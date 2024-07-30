@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Data Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student Data Form</h1>
+      <form action="submit.php" method="POST">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="rollno">Roll No:</label>
+          <input type="text" id="rollno" name="rollno" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone No:</label>
+          <input type="text" id="phone" name="phone" required />
+        </div>
+        <div class="form-group">
+          <label for="class">Class:</label>
+          <input type="text" id="class" name="class" required />
+        </div>
+        <div class="form-group">
+          <label for="section">Section:</label>
+          <input type="text" id="section" name="section" required />
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
