@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Visiting Card</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="form-container">
+        <form>
+          <div class="form-group">
+            <label for="heading">Heading</label>
+            <input
+              type="text"
+              id="heading"
+              name="heading"
+              required
+              oninput="heading()"
+            />
+          </div>
+          <div class="form-group">
+            <label for="mobile">Mobile Number</label>
+            <input type="text" id="mobile" name="mobile" required />
+          </div>
+          <div class="form-group">
+            <label for="whatsapp">WhatsApp Number</label>
+            <input type="text" id="whatsapp" name="whatsapp" required />
+          </div>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="image">Upload Image</label>
+            <input
+              type="file"
+              id="image"
+              name="image"
+              accept="image/*"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="background">Upload Background Image</label>
+            <input
+              type="file"
+              id="background"
+              name="background"
+              accept="image/*"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="facebook">Facebook Link</label>
+            <input type="url" id="facebook" name="facebook" />
+          </div>
+          <div class="form-group">
+            <label for="instagram">Instagram Link</label>
+            <input type="url" id="instagram" name="instagram" />
+          </div>
+          <div class="form-group">
+            <label for="youtube">YouTube Link</label>
+            <input type="url" id="youtube" name="youtube" />
+          </div>
+          <div class="form-group">
+            <label for="linkedin">LinkedIn Link</label>
+            <input type="url" id="linkedin" name="linkedin" />
+          </div>
+          <div class="form-group">
+            <label for="twitter">Twitter (X) Link</label>
+            <input type="url" id="twitter" name="twitter" />
+          </div>
+          <!-- <button type="submit">Submit</button> -->
+        </form>
+      </div>
+
+      <div class="card">
+        <div class="heading"><h1>This is the Heading</h1></div>
+        <br />
+        <div class="info-img">
+          <div class="info">
+            <div><b>Name:</b> <span class="name">Aryan Kumar</span></div>
+            <div>
+              <b>Address:</b> <span class="add">Ranchi, Jharkhand</span>
+            </div>
+            <div>
+              <b>Email:</b> <span class="email">kumar1310aryan@gmail.com</span>
+            </div>
+          </div>
+          <div class="contact">
+            <div>
+              <i class="fa-solid fa-phone-volume"></i>
+              <span class="phoneNumber">+91 7667875287</span>
+            </div>
+            <div>
+              <i class="fa-brands fa-whatsapp fa-lg"></i>
+              <span class="whatsappNumber">+91 8987851950</span>
+            </div>
+            <br />
+            <img src="images/OIP (3).jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="social-icons">
+          <a href=""><img src="images/facebook-logo-3.png" alt="Facebook" /></a>
+          <a href=""><img src="images/OIP.jpg" alt="Instagram" /></a>
+          <a href=""
+            ><img src="images/official-youtube-logo-png-18.png" alt="Youtube"
+          /></a>
+          <a href=""><img src="images/OIP (1).jpg" alt="LinkedIn" /></a>
+          <a href=""><img src="images/twitter_PNG32.png" alt="twitter" /></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

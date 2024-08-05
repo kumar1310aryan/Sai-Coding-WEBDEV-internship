@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visiting Card Maker</title>
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -10,127 +12,184 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Visiting Card</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="form.css" />
   </head>
   <body>
-    <div class="main">
-      <div class="form-container">
-        <form>
-          <div class="form-group">
-            <label for="heading">Heading</label>
-            <input
-              type="text"
-              id="heading"
-              name="heading"
-              required
-              oninput="heading()"
-            />
-          </div>
-          <div class="form-group">
-            <label for="mobile">Mobile Number</label>
-            <input type="text" id="mobile" name="mobile" required />
-          </div>
-          <div class="form-group">
-            <label for="whatsapp">WhatsApp Number</label>
-            <input type="text" id="whatsapp" name="whatsapp" required />
-          </div>
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div class="form-group">
-            <label for="address">Address</label>
-            <input type="text" id="address" name="address" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="form-group">
-            <label for="image">Upload Image</label>
-            <input
-              type="file"
-              id="image"
-              name="image"
-              accept="image/*"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="background">Upload Background Image</label>
-            <input
-              type="file"
-              id="background"
-              name="background"
-              accept="image/*"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="facebook">Facebook Link</label>
-            <input type="url" id="facebook" name="facebook" />
-          </div>
-          <div class="form-group">
-            <label for="instagram">Instagram Link</label>
-            <input type="url" id="instagram" name="instagram" />
-          </div>
-          <div class="form-group">
-            <label for="youtube">YouTube Link</label>
-            <input type="url" id="youtube" name="youtube" />
-          </div>
-          <div class="form-group">
-            <label for="linkedin">LinkedIn Link</label>
-            <input type="url" id="linkedin" name="linkedin" />
-          </div>
-          <div class="form-group">
-            <label for="twitter">Twitter (X) Link</label>
-            <input type="url" id="twitter" name="twitter" />
-          </div>
-          <!-- <button type="submit">Submit</button> -->
+    <header>
+      <h1>Visiting Card Maker</h1>
+    </header>
+    <section>
+      <div class="cardDetails">
+        <h1>Fill Details for Visiting Card</h1>
+        <form class="visitingForm">
+          <table>
+            <tr>
+              <td>Full Name :-</td>
+              <td>
+                <input type="text" class="uname" oninput="updateCard()" />
+              </td>
+            </tr>
+            <tr>
+              <td>Contact No. :-</td>
+              <td>
+                <input type="text" class="contact" oninput="updateCard()" />
+              </td>
+            </tr>
+            <tr>
+              <td>Whatsapp No. :-</td>
+              <td>
+                <input type="text" class="whatsapp" oninput="updateCard()" />
+              </td>
+            </tr>
+            <tr>
+              <td>Email Id :-</td>
+              <td>
+                <input type="email" class="email" oninput="updateCard()" />
+              </td>
+            </tr>
+            <tr>
+              <td>Address :-</td>
+              <td>
+                <input type="text" class="address" oninput="updateCard()" />
+              </td>
+            </tr>
+            <tr>
+              <td>Image :-</td>
+              <td><input type="file" onchange="updateImage(event)" /></td>
+            </tr>
+            <tr>
+              <td>Background Image :-</td>
+              <td><input type="file" onchange="updateBackground(event)" /></td>
+            </tr>
+            <tr>
+              <td>Facebook Link :-</td>
+              <td>
+                <input type="url" class="facebook" oninput="updateCard()" />
+              </td>
+            </tr>
+            <tr>
+              <td>Instagram Link :-</td>
+              <td>
+                <input type="url" class="instagram" oninput="updateCard()" />
+              </td>
+            </tr>
+            <tr>
+              <td>Twitter Link :-</td>
+              <td>
+                <input type="url" class="twitter" oninput="updateCard()" />
+              </td>
+            </tr>
+            <tr>
+              <td>Telegram Link :-</td>
+              <td>
+                <input type="url" class="telegram" oninput="updateCard()" />
+              </td>
+            </tr>
+            <tr>
+              <td>Linkedin Link :-</td>
+              <td>
+                <input type="url" class="linkedin" oninput="updateCard()" />
+              </td>
+            </tr>
+          </table>
         </form>
       </div>
-
-      <div class="card">
-        <div class="heading"><h1>This is the Heading</h1></div>
-        <br />
-        <div class="info-img">
-          <div class="info">
-            <div><b>Name:</b> <span class="name">Aryan Kumar</span></div>
-            <div>
-              <b>Address:</b> <span class="add">Ranchi, Jharkhand</span>
-            </div>
-            <div>
-              <b>Email:</b> <span class="email">kumar1310aryan@gmail.com</span>
-            </div>
-          </div>
+      <div class="visitingCard">
+        <div class="card" id="card">
+          <h1 align="center" class="occupation">Occupation</h1>
           <div class="contact">
-            <div>
-              <i class="fa-solid fa-phone-volume"></i>
-              <span class="phoneNumber">+91 7667875287</span>
-            </div>
-            <div>
-              <i class="fa-brands fa-whatsapp fa-lg"></i>
-              <span class="whatsappNumber">+91 8987851950</span>
-            </div>
-            <br />
-            <img src="images/OIP (3).jpg" alt="" />
+            <h3>
+              <i class="fa-solid fa-phone"></i>
+              <span class="contactNumber">0000000000</span>
+            </h3>
+            <h3>
+              <i class="fa-brands fa-whatsapp"></i>
+              <span class="whatsappNumber">0000000000</span>
+            </h3>
           </div>
-        </div>
-
-        <div class="social-icons">
-          <a href=""><img src="images/facebook-logo-3.png" alt="Facebook" /></a>
-          <a href=""><img src="images/OIP.jpg" alt="Instagram" /></a>
-          <a href=""
-            ><img src="images/official-youtube-logo-png-18.png" alt="Youtube"
-          /></a>
-          <a href=""><img src="images/OIP (1).jpg" alt="LinkedIn" /></a>
-          <a href=""><img src="images/twitter_PNG32.png" alt="twitter" /></a>
+          <div class="details">
+            <div class="pDetail">
+              <h3>Name :- <span class="showName">ABC</span></h3>
+              <h3>Email :- <span class="showEmail">abc@gmail.com</span></h3>
+              <h3>Address :- <span class="showAddress">ABC</span></h3>
+            </div>
+            <div class="pImg">
+              <img
+                id="profileImage"
+                src="https://st3.depositphotos.com/3581215/18899/v/450/depositphotos_188994514-stock-illustration-vector-illustration-male-silhouette-profile.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="socialLink">
+            <a href="#" class="facebookLink" target="_blank"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+            <a href="#" class="instagramLink" target="_blank"
+              ><i class="fa-brands fa-square-instagram"></i
+            ></a>
+            <a href="#" class="twitterLink" target="_blank"
+              ><i class="fa-brands fa-square-twitter"></i
+            ></a>
+            <a href="#" class="telegramLink" target="_blank"
+              ><i class="fa-brands fa-telegram"></i
+            ></a>
+            <a href="#" class="linkedinLink" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <script src="index.js"></script>
+    <script>
+      function updateCard() {
+        const name = document.querySelector(".uname").value;
+        const contact = document.querySelector(".contact").value;
+        const whatsapp = document.querySelector(".whatsapp").value;
+        const email = document.querySelector(".email").value;
+        const address = document.querySelector(".address").value;
+        const facebook = document.querySelector(".facebook").value;
+        const instagram = document.querySelector(".instagram").value;
+        const twitter = document.querySelector(".twitter").value;
+        const telegram = document.querySelector(".telegram").value;
+        const linkedin = document.querySelector(".linkedin").value;
+
+        document.querySelector(".showName").textContent = name || "ABC";
+        document.querySelector(".contactNumber").textContent =
+          contact || "0000000000";
+        document.querySelector(".whatsappNumber").textContent =
+          whatsapp || "0000000000";
+        document.querySelector(".showEmail").textContent =
+          email || "abc@gmail.com";
+        document.querySelector(".showAddress").textContent = address || "ABC";
+
+        document.querySelector(".facebookLink").href = facebook || "#";
+        document.querySelector(".instagramLink").href = instagram || "#";
+        document.querySelector(".twitterLink").href = twitter || "#";
+        document.querySelector(".telegramLink").href = telegram || "#";
+        document.querySelector(".linkedinLink").href = linkedin || "#";
+      }
+
+      function updateImage(event) {
+        const file = event.target.files[0];
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          document.getElementById("profileImage").src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+      }
+
+      function updateBackground(event) {
+        const file = event.target.files[0];
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          document.getElementById(
+            "card"
+          ).style.backgroundImage = `url(${e.target.result})`;
+          document.getElementById("card").style.backgroundSize = "cover";
+        };
+        reader.readAsDataURL(file);
+      }
+    </script>
   </body>
 </html>
